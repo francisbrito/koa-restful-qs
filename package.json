@@ -1,0 +1,29 @@
+{
+  "name": "koa-restful-qs",
+  "version": "0.0.1",
+  "description": "RESTful query string parsing middleware for Koa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisbrito/koa-restful-qs.git"
+  },
+  "keywords": [
+    "koa",
+    "restful",
+    "qs",
+    "parser",
+    "middleware",
+    "rest",
+    "query",
+    "querystring"
+  ],
+  "author": "Francis Brito <fr.br94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francisbrito/koa-restful-qs/issues"
+  },
+  "homepage": "https://github.com/francisbrito/koa-restful-qs#readme"
+}
