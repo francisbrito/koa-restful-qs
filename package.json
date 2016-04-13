@@ -1,6 +1,6 @@
 {
   "name": "koa-restful-qs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "RESTful query string parsing middleware for Koa.",
   "main": "index.js",
   "scripts": {
