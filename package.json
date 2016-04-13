@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/francisbrito/koa-restful-qs/issues"
   },
-  "homepage": "https://github.com/francisbrito/koa-restful-qs#readme"
+  "homepage": "https://github.com/francisbrito/koa-restful-qs#readme",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
 }
