@@ -34,6 +34,36 @@ test('it calls RESTful query parser with `context.query`', t => {
   t.end();
 });
 
+test('it supports overriding state key.', t => {
+  const key = 'rest';
+  const query = {
+    age: '29',
+    name: 'sabrina',
+  };
+  const expectedQuery = {
+    filter: {
+      age: '29',
+      name: 'sabrina',
+    },
+  };
+  const context = {
+    state: {},
+    request: {
+      query,
+    },
+  };
+  const subject = restfulQueryParser({ key }).call(context);
+
+  subject.next();
+
+  t.ok(context.state[key], 'should have set `key`.');
+  t.deepEqual(
+    context.state[key].filter, expectedQuery.filter, 'should have set `key` to expected query.'
+  );
+
+  t.end();
+});
+
 function isGeneratorFn(fn) {
   return fn && fn.constructor.name === 'GeneratorFunction';
 }
